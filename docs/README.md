@@ -28,6 +28,7 @@
     - questions
       - [index.js](#clientsrccomponentspagesquestionsindexjs)
     - quiz
+      - [back-button.js](#clientsrccomponentspagesquizback-buttonjs)
       - [hint-div.js](#clientsrccomponentspagesquizhint-divjs)
       - [hint-panel.js](#clientsrccomponentspagesquizhint-paneljs)
       - [index.js](#clientsrccomponentspagesquizindexjs)
@@ -40,6 +41,7 @@
     - [div.js](#clientsrccomponentsshareddivjs)
     - [input-greeting.js](#clientsrccomponentssharedinput-greetingjs)
 - handlers
+  - [back-question-handler.js](#clientsrchandlersback-question-handlerjs)
   - [change-greeting.js](#clientsrchandlerschange-greetingjs)
   - [nextButtonHandler.js](#clientsrchandlersnextButtonHandlerjs)
 - init
@@ -171,6 +173,10 @@ The questions page.
 
 ### /quiz
 
+<details><summary><a href="../../client/src/components/pages/quiz/back-button.js" id="clientsrccomponentspagesquizback-buttonjs">../client/src/components/pages/quiz/back-button.js</a></summary>
+
+</details>
+
 <details><summary><a href="../../client/src/components/pages/quiz/hint-div.js" id="clientsrccomponentspagesquizhint-divjs">../client/src/components/pages/quiz/hint-div.js</a></summary>
 
 </details>
@@ -251,6 +257,10 @@ This component creates a div element and returns it.
 ---
 
 # /handlers
+
+<details><summary><a href="../../client/src/handlers/back-question-handler.js" id="clientsrchandlersback-question-handlerjs">../client/src/handlers/back-question-handler.js</a></summary>
+
+</details>
 
 <details><summary><a href="../../client/src/handlers/change-greeting.js" id="clientsrchandlerschange-greetingjs">../client/src/handlers/change-greeting.js</a></summary>
 

@@ -1,4 +1,5 @@
 import { state } from "../../../init/state.js";
+import { backButton } from "./back-button.js";
 import { createHintPanel } from "./hint-panel.js";
 import { quizQuestionPanel } from "./quiz-question-panel.js";
 import { createRestartQuizButtonPanel } from "./restart-button.js";
@@ -15,6 +16,7 @@ export const quiz = () => {
 
   if (state.indexOfRenderedQuestion >= 0) {
     container.appendChild(quizQuestionPanel(state.indexOfRenderedQuestion));
+    container.appendChild(backButton());
     container.appendChild(nextButton());
     container.appendChild(createHintPanel());
     container.appendChild(createRestartQuizButtonPanel());
@@ -22,7 +24,7 @@ export const quiz = () => {
     //warn if the start button is never clicked
     container.appendChild(
       document.createTextNode("Please start the quiz from home page!")
-    );    
+    );
   }
   return container;
 };
