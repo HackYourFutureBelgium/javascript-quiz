@@ -9,13 +9,15 @@ const nextButtonHandler = () => {
   data.indexOfRenderedQuestion++;
   // render the question panel
   quizContainer.appendChild(quizQuestionPanel(data.indexOfRenderedQuestion));
-
-  const hintContainer = document.querySelector(".btn-info");
-  hintContainer.innerHTML = "";
-  state.questions[state.indexOfRenderedQuestion].links++;
-  hintContainer.appendChild(
-    createHintPanel(state.questions[state.indexOfRenderedQuestion].links)
-  );
+  // render hint
+  const hint = state.questions[state.indexOfRenderedQuestion].links;
+  for (let i = 0; i < data.numberOfTotalQuestions; i++) {
+    const hintContainer = document.getElementById("hint-panel");
+    hintContainer.innerHTML = "";
+    hintContainer.appendChild(createHintPanel(hint[i]));
+  }
+  // console.log(hint);
+  // hintContainer.appendChild(createHintPanel(hint));
 };
 
 export { nextButtonHandler };
