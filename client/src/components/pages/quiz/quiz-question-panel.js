@@ -39,6 +39,9 @@ export const quizQuestionPanel = (indexQuestion) => {
     const checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
     checkbox.dataset.index = i;
+    if (answers.selected) {
+      checkbox.setAttribute("checked", "true");
+    }
     const listEl = document.createElement("li");
     listEl.setAttribute("class", "li-answer");
     const listDiv = document.createElement("div");
