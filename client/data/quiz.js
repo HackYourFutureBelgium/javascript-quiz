@@ -3,7 +3,6 @@ export const data = {
   numberOfTotalQuestions: -1,
   currentScore: -1,
 
-  greeting: "hello",
   questions: [
     {
       question:
@@ -75,6 +74,38 @@ export const data = {
         {
           text: "MDN",
           url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
+        },
+      ],
+    },
+    {
+      question: "Inside which HTML element do we put the JavaScript?",
+      answered: false,
+      answers: [
+        {
+          text: "<scripting>",
+          correct: false,
+          selected: false,
+        },
+        {
+          text: "<script>",
+          correct: true,
+          selected: false,
+        },
+        {
+          text: "<js>",
+          correct: false,
+          selected: false,
+        },
+        {
+          text: "<javascript>",
+          correct: false,
+          selected: false,
+        },
+      ],
+      links: [
+        {
+          text: "tutorialsteacher.com",
+          url: "https://www.tutorialsteacher.com/javascript/script-tag",
         },
       ],
     },

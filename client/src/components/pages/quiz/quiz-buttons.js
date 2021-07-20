@@ -1,12 +1,12 @@
-import { button } from '../../shared/button.js';
-import { divElement } from '../../shared/div.js';
+import { button } from "../../shared/button.js";
+import { divElement } from "../../shared/div.js";
 
 export const createQuizButtonsDiv = () => {
   const quizButtonsDiv = divElement(
     // To remove the borders remove classes 'border',  'border-secondary',
     // and 'rounded'
-    'my-3 border border-secondary rounded',
-    'quiz-buttons'
+    "my-3 border border-secondary rounded",
+    "quiz-buttons"
   );
 
   /*
@@ -16,15 +16,15 @@ export const createQuizButtonsDiv = () => {
    * after the first question this button must be visible
    */
   const previousButton = button(
-    'button',
-    'Previous',
-    'btn btn-primary',
-    'previous-button'
+    "button",
+    "Previous",
+    "btn btn-primary",
+    "previous-button"
   );
   quizButtonsDiv.appendChild(previousButton);
 
   // add next button
-  const nextButton = button('button', 'Next', 'btn btn-primary', 'next-button');
+  const nextButton = button("button", "Next", "btn btn-primary", "next-button");
   quizButtonsDiv.appendChild(nextButton);
 
   /*
@@ -33,10 +33,10 @@ export const createQuizButtonsDiv = () => {
    * in the last question this button must be visible (display:block;)
    */
   const submitButton = button(
-    'button',
-    'Submit',
-    'btn btn-primary',
-    'submit-button'
+    "button",
+    "Submit",
+    "btn btn-primary",
+    "submit-button"
   );
   quizButtonsDiv.appendChild(submitButton);
 

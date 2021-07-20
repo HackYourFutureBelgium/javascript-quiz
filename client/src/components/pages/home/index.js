@@ -1,7 +1,7 @@
-import { state } from '../../../init/state.js';
-import { instructions } from './instructions.js';
-import { numberOfQu } from './number-of-questions.js';
-import { startQuizButton } from './start-button.js';
+import { state } from "../../../init/state.js";
+import { instructions } from "./instructions.js";
+import { numberOfQu } from "./number-of-questions.js";
+import { startQuizButton } from "./start-button.js";
 
 /**
  * The home page.
@@ -9,8 +9,8 @@ import { startQuizButton } from './start-button.js';
  * @returns {HTMLDivElement} A rendered home page.
  */
 export const home = () => {
-  const container = document.createElement('div');
-  container.className = 'body';
+  const container = document.createElement("div");
+  container.className = "body";
 
   container.appendChild(instructions());
 
@@ -21,5 +21,5 @@ export const home = () => {
   return container;
 };
 
-//calculate the number of total questions in the quiz data
+// calculate the number of total questions in the quiz data
 state.numberOfTotalQuestions = state.questions.length;

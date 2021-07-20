@@ -5,7 +5,7 @@ import { state } from "../../../init/state.js";
 // import { createRestartQuizButtonPanel } from "./restart-button.js";
 
 const checked = (e) => {
-  const target = e.target;
+  const { target } = e;
   if (target.nodeName === "INPUT") {
     const isChecked = target.checked;
 

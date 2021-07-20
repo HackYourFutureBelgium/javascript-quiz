@@ -29,6 +29,7 @@
       - [index.js](#clientsrccomponentspagesquestionsindexjs)
     - quiz
       - [back-button.js](#clientsrccomponentspagesquizback-buttonjs)
+      - [div-results.js](#clientsrccomponentspagesquizdiv-resultsjs)
       - [hint-div.js](#clientsrccomponentspagesquizhint-divjs)
       - [hint-panel.js](#clientsrccomponentspagesquizhint-paneljs)
       - [index.js](#clientsrccomponentspagesquizindexjs)
@@ -36,21 +37,22 @@
       - [quiz-buttons.js](#clientsrccomponentspagesquizquiz-buttonsjs)
       - [quiz-question-panel.js](#clientsrccomponentspagesquizquiz-question-paneljs)
       - [restart-button.js](#clientsrccomponentspagesquizrestart-buttonjs)
+      - [score.js](#clientsrccomponentspagesquizscorejs)
+      - [submit-button.js](#clientsrccomponentspagesquizsubmit-buttonjs)
   - shared
     - [button.js](#clientsrccomponentssharedbuttonjs)
     - [div.js](#clientsrccomponentsshareddivjs)
-    - [input-greeting.js](#clientsrccomponentssharedinput-greetingjs)
 - handlers
   - [back-question-handler.js](#clientsrchandlersback-question-handlerjs)
-  - [change-greeting.js](#clientsrchandlerschange-greetingjs)
   - [nextButtonHandler.js](#clientsrchandlersnextButtonHandlerjs)
+  - [submit-button-handler.js](#clientsrchandlerssubmit-button-handlerjs)
+  - [update-score.js](#clientsrchandlersupdate-scorejs)
 - init
   - [index.js](#clientsrcinitindexjs)
   - [router.js](#clientsrcinitrouterjs)
   - [state.js](#clientsrcinitstatejs)
 - logic
   - [reset-quiz.js](#clientsrclogicreset-quizjs)
-  - [reverse.js](#clientsrclogicreversejs)
 - [routes.js](#clientsrcroutesjs)
 
 ---
@@ -177,6 +179,10 @@ The questions page.
 
 </details>
 
+<details><summary><a href="../../client/src/components/pages/quiz/div-results.js" id="clientsrccomponentspagesquizdiv-resultsjs">../client/src/components/pages/quiz/div-results.js</a></summary>
+
+</details>
+
 <details><summary><a href="../../client/src/components/pages/quiz/hint-div.js" id="clientsrccomponentspagesquizhint-divjs">../client/src/components/pages/quiz/hint-div.js</a></summary>
 
 </details>
@@ -221,6 +227,32 @@ This function creates a start/restart button for the quiz page and resets the qu
 
 </details>
 
+<details><summary><a href="../../client/src/components/pages/quiz/score.js" id="clientsrccomponentspagesquizscorejs">../client/src/components/pages/quiz/score.js</a></summary>
+
+<a name="score"></a>
+
+## score ⇒ <code>HTMLDivElement</code>
+
+Returns a div element.
+
+**Returns**: <code>HTMLDivElement</code> - - Div with rendered score.
+
+| Param        | Type                | Description              |
+| ------------ | ------------------- | ------------------------ |
+| updatedScore | <code>number</code> | Updated score from data. |
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/quiz/submit-button.js" id="clientsrccomponentspagesquizsubmit-buttonjs">../client/src/components/pages/quiz/submit-button.js</a></summary>
+
+<a name="submitButton"></a>
+
+## submitButton ⇒ <code>HTMLButtonElement</code>
+
+Renders button element.
+
+</details>
+
 ---
 
 ---
@@ -248,10 +280,6 @@ This component creates a div element and returns it.
 
 </details>
 
-<details><summary><a href="../../client/src/components/shared/input-greeting.js" id="clientsrccomponentssharedinput-greetingjs">../client/src/components/shared/input-greeting.js</a></summary>
-
-</details>
-
 ---
 
 ---
@@ -262,11 +290,15 @@ This component creates a div element and returns it.
 
 </details>
 
-<details><summary><a href="../../client/src/handlers/change-greeting.js" id="clientsrchandlerschange-greetingjs">../client/src/handlers/change-greeting.js</a></summary>
+<details><summary><a href="../../client/src/handlers/nextButtonHandler.js" id="clientsrchandlersnextButtonHandlerjs">../client/src/handlers/nextButtonHandler.js</a></summary>
 
 </details>
 
-<details><summary><a href="../../client/src/handlers/nextButtonHandler.js" id="clientsrchandlersnextButtonHandlerjs">../client/src/handlers/nextButtonHandler.js</a></summary>
+<details><summary><a href="../../client/src/handlers/submit-button-handler.js" id="clientsrchandlerssubmit-button-handlerjs">../client/src/handlers/submit-button-handler.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/handlers/update-score.js" id="clientsrchandlersupdate-scorejs">../client/src/handlers/update-score.js</a></summary>
 
 </details>
 
@@ -335,22 +367,6 @@ This function resets the state of each question in the quiz:
 
 - resets answered property and
 - resets selected property of each available answer for each question.
-
-</details>
-
-<details><summary><a href="../../client/src/logic/reverse.js" id="clientsrclogicreversejs">../client/src/logic/reverse.js</a></summary>
-
-<a name="reverse"></a>
-
-## reverse ⇒ <code>string</code>
-
-Reverses a string.
-
-**Returns**: <code>string</code> - The reversed string.
-
-| Param | Type                | Default                               | Description          |
-| ----- | ------------------- | ------------------------------------- | -------------------- |
-| [str] | <code>string</code> | <code>&quot;&#x27;&#x27;&quot;</code> | A string to reverse. |
 
 </details>
 
