@@ -16,8 +16,6 @@ const nextButtonHandler = () => {
     hintContainer.innerHTML = "";
     hintContainer.appendChild(createHintPanel(hint[i]));
   }
-  // console.log(hint);
-  // hintContainer.appendChild(createHintPanel(hint));
 };
 
 export { nextButtonHandler };
